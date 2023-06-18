@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Jogo do Clique</title>
+</head>
+<body>
+    <div class="game">
+        <div class="left-side">
+            <div class="title">
+                <img src="images/background/titulo.png" alt="Titulo do Jogo">
+            </div>
+    
+            <div class="clicker">
+                <button onclick="increaseScore(); playClickSound()">
+                    <img id="clickButton" src="images/avatar/avatar1.png" alt="Clica ai Malandro">
+                </button>
+
+                <audio id="clickSound">
+                    <source src="images/efeitos_sonoro/som.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        
+            <p>CAPIVARA POINTS (CPV): <span id="score">0</span></p>
+        </div>
+    
+        <div class="right-side">
+            <h1>COMPRE UM UPGRADE</h1>
+            <div class="box-upgrade">
+                <div class="buttons">
+                    <button id="upgrade1" onclick="buyUpgrade(0)">Comprar UPGRADE 1 (CPV: 10)</button>
+                    <button id="upgrade2" onclick="buyUpgrade(1)">Comprar UPGRADE 2 (CPV: 50)</button>
+                    <button id="upgrade3" onclick="buyUpgrade(2)">Comprar UPGRADE 3 (CPV: 100)</button>
+                    <button id="upgrade4" onclick="buyUpgrade(3)">Comprar UPGRADE 4 (CPV: 250)</button>
+                </div> 
+    
+                <p>Upgrades: <span id="upgrades">0</span></p>
+            </div> 
+        </div>
+    </div>
+
+    <footer>
+        <div class="banner">
+            <img id="brusque" src="https://static.ndmais.com.br/2020/01/brusque-950x475.png" alt="brusque">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

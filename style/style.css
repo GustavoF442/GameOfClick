@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    
+}
+
+.game {
+   display: flex;
+}
+
+.right-side, .left-side {
+    display: inline-block;
+}
+
+.left-side {
+    background-image: url(..//images/background/background.png);
+    width: 1500px;
+}
+
+.title img {
+    position: relative;
+    width: 600px;
+    height: 130px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.clicker button {
+    position: relative;
+    width: 378px;
+    height: 361px;
+    border-radius: 300px;
+    border: none;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.clicker img {
+    width: 270px;
+    height: 240px;
+    margin-top: -40px;
+}
+
+.left-side p {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.right-side {
+    background-color: rgba(16, 98, 68, 0.8);
+    display: flex;
+    flex-direction: column;
+    height: 679px;
+    width: 420px;
+}
+
+.right-side h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.box-upgrade {
+    background-color: rgba(16, 98, 68, 0.8);
+    width: 400px;
+    height: 550px;
+    margin-top: 30px;
+    margin-left: 8px;
+}
+
+.box-upgrade p {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons button {
+    color: black;
+    background-color: white;
+    border: none;
+    width: 390px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.banner img {
+    width: 100%;
+    height: 300px;
+}
+
+button:hover {
+    background-color: rgb(39, 161, 71);
+}
